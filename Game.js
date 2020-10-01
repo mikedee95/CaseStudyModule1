@@ -25,6 +25,10 @@ export default class Game{
         let randomCar = new RandomCar(this);
         this.traffic.push(randomCar);
     }
+    
+      set pause(pause){
+        this._paused = pause;
+    }
 
     update(){
 
