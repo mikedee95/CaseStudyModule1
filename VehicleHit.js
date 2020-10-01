@@ -4,9 +4,9 @@ export function vehicleHit(myCar, traffic){
 
         let randomCar = traffic[i];
 
-        if(randomCar.positionY > 420 && randomCar.positionY < 742){
+        if(randomCar.positionY > 540 && randomCar.positionY < 600){
 
-            if(Math.abs(randomCar.positionX - myCar.positionX) <= 60){
+            if(Math.abs(randomCar.positionX - myCar.positionX) <= 50){
 
                 return true;
             }
