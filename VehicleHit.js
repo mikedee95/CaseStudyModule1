@@ -6,7 +6,7 @@ export function vehicleHit(myCar, traffic){
 
         if(randomCar.positionY > 540 && randomCar.positionY < 600){
 
-            if(Math.abs(randomCar.positionX - myCar.positionX) <= 50){
+            if(Math.abs(randomCar.positionX - myCar.positionX) <= 20){
 
                 return true;
             }
