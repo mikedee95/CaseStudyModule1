@@ -1,11 +1,11 @@
-export default class PlayerCar{
+export default class MyCar{
     constructor(game){
         this.game = game;
         this.context = this.game.context;
         this._positionX = 240;
         this._positionY = 600;
-        this.carWidth = 50;
-        this.carLength = 100;
+        this.carWidth = 45;
+        this.carLength = 90;
         this.init();
     }
 
@@ -27,7 +27,7 @@ export default class PlayerCar{
     }
 
     set positionX(positionX){
-        this._positionX = positionX
+        this._positionX = positionX;
     }
 
     get positionY(){
@@ -35,7 +35,7 @@ export default class PlayerCar{
     }
 
     set positionY(positionY){
-        this._positionY = positionY
+        this._positionY = positionY;
     }
 
     resetPosition(){
@@ -44,12 +44,12 @@ export default class PlayerCar{
     }
 
     moveLeft(){
-        this._positionX -= 15;
+        this._positionX -= 25;
         if(this._positionX <= 100) this._positionX = 100;
     }
 
     moveRight(){
-        this._positionX += 15;
+        this._positionX += 25;
         if(this._positionX >= 360) this._positionX = 360;
     }
 
