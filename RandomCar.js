@@ -3,11 +3,10 @@ export default class RandomCar{
         this.game = game;
         this.context = this.game.context;
         this.car = new Image;
-        this.car.src = "images/car2.png";
-        this._positionY = Math.random() * 480 * -1;
-        this.speed = (Math.random() * 7) + 3;
+        this.car.src = "images/car.png";
+        this._positionY = (Math.random() * 480) * -1;
         this.lane = Math.floor(Math.random() * 3);
-        this.lanePosX = [100,200,300,400];
+        this.lanePosX = [100,165,230,395];
         this.carWidth = 50;
         this.carLength = 100;
     }
@@ -29,20 +28,12 @@ export default class RandomCar{
     }
 
     update(){
-        this._positionY += (this.game.randomCar.speed/5 + this.speed);
+        this._positionY += 7;
         this.context.drawImage(this.car,
-            this.carNo * this.carWidth,
-            0,
-            this.width,
-            this.length,
             this.lanePosX[this.lane],
             this._positionY,
-            this.carWidth,
-            this.carLength
+            50,
+            100
         );
-
-        if(this._positionY >= 742){
-            this.game.traffic.splice(this.game.traffic.indexOf(this), 1);
-        }
     }
 }
