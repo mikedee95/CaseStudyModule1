@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        canvas{background-color:black;
+        canvas {
+            margin-top: 60px;
+            background-color: black;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);}
+
+        h1 {
+            text-align: center;
+            color: blue
         }
-        h1{text-align: center; color: blue}
-        h2{text-align: center; color: red}
+
+        h2 {
+            text-align: center;
+            color: red
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
 
         body {
-            background-image: url('images/background.jpg');
+            background-image: url('images/background.jpg')
         }
+
     </style>
     <script src="Racing.js" type="module"></script>
 </head>
@@ -23,5 +38,6 @@
 <h1>Welcome to Road Rage</h1>
 <canvas id="canvas" width="480" height="742"></canvas>
 <h2>Scores :<span id="score"></span></h2>
+<h3>Tips: Sử dụng phím mũi tên để di chuyển xe sang trái và phải, cố gắng tránh các phương tiện trên đường. <br> Use the arrow keys to move the car to the left and right, try to avoid as many incoming vehicles as possible.</h3>
 </body>
 </html>
