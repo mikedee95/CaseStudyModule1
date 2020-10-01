@@ -5,8 +5,8 @@ export default class RandomCar{
         this.car = new Image;
         this.car.src = "images/car.png";
         this._positionY = (Math.random() * 480) * -1;
-        this.lane = Math.floor(Math.random() * 3);
-        this.lanePosX = [100,165,230,395];
+        this.lane = Math.floor(Math.random() * 4);
+        this.lanePosX = [100,175,250,325,400];
         this.carWidth = 50;
         this.carLength = 100;
     }
