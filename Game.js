@@ -17,7 +17,6 @@ export default class Game{
         setInterval(()=>this.populateTraffic(), 1000);
 
         this._paused = false;
-        // this._gameOver = false;
     }
 
     populateTraffic(){
