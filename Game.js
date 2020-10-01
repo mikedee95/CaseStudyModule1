@@ -31,9 +31,7 @@ export default class Game{
     }
 
     update(){
-
-        // if(this._gameOver) return;
-        //
+        
         if(this._paused) return;
 
         this.road.update();
